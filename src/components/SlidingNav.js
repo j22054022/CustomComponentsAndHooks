@@ -80,7 +80,7 @@ const SlidingNav = ({ liArr, urlArr }) => {
       <ul className="slidingNav__ul" ref={ulRef} style={ulStyle}>
         {liArr.map((item, i) => (
           <li key={item} onMouseOver={handleMouseOver.bind(null, i)}>
-            {item}
+            <a href={urlArr[i]}>{item}</a>
           </li>
         ))}
         <span className="slidingSpan" style={slidingSpan}></span>
